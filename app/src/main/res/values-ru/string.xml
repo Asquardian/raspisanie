@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lec">Лекция</string>
+    <string name="prac">Практика</string>
+    <string name="weekend">Выходной</string>
+</resources>
+
+

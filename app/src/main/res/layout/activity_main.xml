@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".MainActivity"
+    tools:menu="@menu/menuselct">
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:background="#303030">
+
+            <TextView
+                android:id="@+id/d1"
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:alpha=".9"
+                android:background="#303030"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="ActiveDay"
+                android:text="ПН"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/d2"
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:alpha=".9"
+                android:background="#303030"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="ActiveDay"
+                android:text="ВТ"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/d3"
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:alpha=".9"
+                android:background="#303030"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="ActiveDay"
+                android:text="СР"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/d4"
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:alpha=".9"
+                android:background="#303030"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="ActiveDay"
+                android:text="ЧТ"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/d5"
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:alpha=".9"
+                android:background="#303030"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="ActiveDay"
+                android:text="ПТ"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/d6"
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:alpha=".9"
+                android:background="#303030"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="ActiveDay"
+                android:text="СБ"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="501dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar2"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="360dp"
+        android:layout_height="43dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="5dp"
+        android:background="#FFFFFF"
+        app:backgroundTint="#202020"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menuselct" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="260dp"
+        android:alpha="0.9"
+        android:text="Расписание"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
