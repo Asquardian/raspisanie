@@ -4,7 +4,7 @@
 
 Расписание для Android
 
-#База данных SQL
+# База данных SQL
 
 TIME : TEXT для времени. Генерируется по номеру пары в расписании
 
@@ -18,27 +18,29 @@ TYPE : INTEGER для лекций и практик
 
 PLACE : TEXT место
 
-#КЛАССЫ 
+# КЛАССЫ 
 
 
 
-##Day 
+## Day 
 
 Нужен для работы с днями. Используется массив для распределения по времени
 
-##Database
+
+
+## Database
 
 Нужен для работы с базой данных
 
-##Lesson
+## Lesson
 
-###Метод MakeTime
+### Метод MakeTime
 
 Нужен для перевода номера пары во время
 
 
  
-##LessonAdapter
+## LessonAdapter
 
 Адаптер для класса Lesson
 
@@ -48,13 +50,15 @@ PLACE : TEXT место
 
 
 
-##PagerApadterDay
+## PagerApadterDay
 
 Создает страницу дня с помощью ShowDayFragment
 
 Наследуется от FragmentStateAdapter
 
-##ShowDayFragment
+
+
+## ShowDayFragment
 
 Создает день на основе данных
 
@@ -62,7 +66,7 @@ PLACE : TEXT место
 
 
 
-##groupList
+## groupList
 
 Нужен для создания групп
 
